@@ -1,0 +1,564 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*::before, *::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html,body {
+    font-family: the 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+    
+#logo {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+body {
+    margin: 0 auto;
+    width: fit-content;
+    height: 600px;
+    float: center;
+}
+
+section {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 16px;
+    border-radius: 0.5em;
+    margin: 8px 8px 16px 8px;
+}
+
+article {
+    padding: 4px;
+    margin: 4px;
+    border-radius: 0.5em;
+}
+
+h1, h2, h3, p {
+    text-align: left;
+}
+
+.underline{
+    text-align: center;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+nav {
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    margin: 0px 0px 16px 0px;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+    
+nav ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+    
+nav ul li:hover {
+    background-color: #e0e0e0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #0a0a0a;
+    color: #fff;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.room {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.room-details{
+    flex: 1;
+    margin: 15px;
+}
+
+.room-details h2{
+    margin-top: 5px;
+}
+
+.room-details p{
+    margin-bottom: 5px;
+}
+
+.room-image img {
+    width: 280px;
+    height: auto;
+    margin-top: 38px;
+    margin-right: 15px;
+}
+
+.container card{
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 300px;
+}
+
+.center {
+   margin-left: auto;
+   margin-right: auto; 
+}
+
+.card {
+    border: 1px solid #adadad8a;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.062);
+    position: relative;
+}
+
+.card-title {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background-color: #fff;
+}
+
+progress {
+    margin-left: 10px;
+    margin-top: 30px;
+    width: 78%;
+    background-color:white;
+    height: 20px;
+    border-radius: 0.5em;
+}
+
+progress::-moz-progress-bar,progress::-webkit-progress-value {
+    background-color:#060707;
+    
+}
+
+.form-page {
+    padding: 20px;
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 5px;
+}
+
+.form-page .row {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.form-page label input[type="text"] {
+    width:70%;
+    margin-left: 20px;
+    line-height: 150%;
+}
+
+.form-page label input[type="radio"] {
+    vertical-align: middle;
+    margin-top: -1px;
+}
+
+.form-page button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-page button:hover{
+    background-color: #45a049;
+}
+
+.form-page button.next {
+    float: right;
+}
+
+.form-page button.previous {
+    float: left;
+}
+
+.section{
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.section p{
+    font-weight: bold;
+    margin: 20px;
+}
+
+.section div{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+#total-price{
+    margin: 5%;
+    font-weight: bold;
+}
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    margin-top: 20px;
+}
+
+thead {
+    color:#fff;
+    background-color: #206E32;
+}
+
+th {
+    padding: 8px 8px 8px 16px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+td {
+    text-align: center;
+}
+
+/*form-page4*/
+/* Style the label for the expiry date */
+label[for="exp-date"] {
+    display: block; /* Makes the label appear on a new line */
+    margin-bottom: 5px; /* Add space between the label and the input field */
+  }
+  
+  /* Style the expiry date input field */
+  #exp-date {
+    width: 70px; /* Set the width of the input field */
+    padding: 5px; /* Add padding to the input field */
+    border: 1px solid #ccc; /* Add a border to the input field */
+    border-radius: 3px; /* Add rounded corners to the input field */
+  }
+  
+
+  /*banner*/
+  /* Keyframes for PIHA animation */
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 360px;
+    margin-right: 40px;
+    margin-left: 40px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+@keyframes pihaAnimation {
+    0% { opacity: 0; transform: scale(1.1); }
+    50% { opacity: 1; transform: scale(1.1); }
+    100% { opacity: 0; transform: scale(1); }
+}
+
+/* Keyframes for the slide animation */
+@keyframes slide1 {
+    0%, 16.66% { opacity: 0; transform: scale(1.1); }
+    16.67%, 83.33% { opacity: 1; transform: scale(1); }
+    83.34%, 100% { opacity: 0; transform: scale(0.9); }
+}
+
+@keyframes slide2 {
+    0%, 50% { opacity: 0; transform: translateX(-100%); }
+    50.01%, 100% { opacity: 1; transform: translateX(0%); }
+}
+@keyframes slide 3 {
+    0%, 50% { opacity: 0; transform: translateX(-100%); }
+    50.01%, 100% { opacity: 1; transform: translateX(0%); }
+}
+
+
+/* Apply animation to the images and text */
+.slide-container {
+    height: 350px;
+    margin: 0 auto;
+    animation: repeatAnimation 24s infinite; /* Adjusted duration for the repeating sequence */
+}
+
+/* Apply animation to the first image */
+.image1 {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.1); /* Initially apply zoom out effect */
+    animation: slide1 12s infinite; /* Apply slide1 animation */
+}
+
+/* Apply animation to the second image */
+.image2 {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-100%); /* Initially move image out of view */
+    animation: slide2 12s infinite; /* Apply slide2 animation */
+}
+
+/* Apply animation to text */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Apply animation to PIHA text */
+.piha-text {
+    animation: pihaAnimation 6s forwards; /* Adjusted duration for the repeating sequence */
+}
+
+/* Apply animation to text lines */
+.text-line {
+    display: block;
+    opacity: 0;
+}
+
+.line1 { animation: fadeIn 0.5s 9s forwards; }
+.line2 { animation: fadeIn 0.5s 9.5s forwards; }
+.line3 { animation: fadeIn 0.5s 10s forwards; }
+.line4 { animation: fadeIn 0.5s 10.5s forwards; }
+.line5 { animation: fadeIn 0.5s 11s forwards; }
+.line6 { animation: fadeIn 0.5s 11.5s forwards; }
+
+/* Apply animation to the link */
+.link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+}
+
+/* Apply animation to the footer */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    color: white; /* Change color as needed */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes repeatAnimation {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.1); 
+        animation: pihaAnimation 6s forwards, slideAnimation 12s infinite; /* Repeating sequence of PIHA and slide animations */
+    }
+}
+/* Style for the third form page (Personal Details) */
+#form-page3 {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#form-page3 .row {
+    margin-bottom: 20px;
+}
+
+#form-page3 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#form-page3 input[type="text"],
+#form-page3 input[type="number"],
+#form-page3 input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 6px;
+    transition: border-color 0.3s ease;
+}
+
+#form-page3 input[type="text"]:focus,
+#form-page3 input[type="number"]:focus,
+#form-page3 input[type="email"]:focus {
+    outline: none;
+    border-color: #2077b1;
+}
+
+#form-page3 .form-group {
+    margin-top: 20px;
+}
+
+#form-page3 .form-group input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#form-page3 .form-group label {
+    font-weight: normal;
+}
+
+#form-page3 button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#form-page3 button:hover {
+    background-color: #45a049;
+}
+/* Update card details form page styles */
+
+#form-page4 {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#form-page4 h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #206E32;
+}
+
+.form-page .row {
+    margin-bottom: 20px;
+}
+
+.form-page label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-page input[type="text"],
+.form-page input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-page input[type="radio"],
+.form-page input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.form-page button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #206E32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-page button:hover {
+    background-color: #45a049;
+}
+
+#accept-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#accept-checkbox {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#accept-label-text {
+    font-size: 14px;
+}

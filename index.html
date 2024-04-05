@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piha Lodge</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="styles1.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Location</a>
+        <a href="gallery.html">Review</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="banner">
+        <div class="slide-container">
+            <!-- Image 1 -->
+            <div class="image1" style="background-image: url('./assets/image1.jpg');"></div>
+            <!-- Image 2 -->
+            <div class="image2" style="background-image: url('./assets/image2.jpg');"></div>
+            <!-- Text -->
+            <div class="text">
+                <div class="piha-text">PIHA</div>
+                <div class="text-line line1" style="animation-delay: 3s;">New in Auckland?</div>
+                <div class="text-line line2" style="animation-delay: 3.5s;">Want to reconnect with nature?</div>
+                <div class="text-line line3" style="animation-delay: 4s;">Escape to Piha beach and let the beauty</div>
+                <div class="text-line line4" style="animation-delay: 4.5s;">of coastline captivate your senses.</div>
+                <div class="text-line line5" style="animation-delay: 6.5s;">Build a bond that last a lifetime admidst the</div>
+                <div class="text-line line6" style="animation-delay: 7s;">beauty of Piha's costal paradis</div>
+            </div>
+            <!-- Link -->
+            <a href="http://www.piha.co.nz/" class="link" target="_blank">Visit Piha</a>
+            <!-- Footer -->
+            <div class="footer">
+                <div>Krijesh</div>
+                <div>Student ID:1568289</div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="image1.1.jpg" alt="Image 1">
+                <div class="slide-text1">Love the nature?</div>
+              </div>
+              <div class="slide">
+                <img src="./image2.2.jpg" alt="Image 2">
+                <div class="slide-text2">Visit Piha Piha Beach</div>
+              </div>
+              <div class="slide">
+                <img src="image3.3.jpg" alt="Image 3">
+                <div class="slide-text3">Refresh yourself</div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    </section>
+    <section>
+        <h2 class="underline"> Nepal Guest House </h2>
+        <div class="container card">
+            <subtitle class="card-title">Fill the details</subtitle>
+
+            <div id="form-page1" class="form-page" style="display: block">
+                <div id="booking-form">
+                    <label for="check-in" class="row">Check-in date:</label><br />
+                    <input type='date' id='check-in' name='check-in' required><br />
+
+                    <label for='check-out' class="row">Check-out date:</label><br />
+                    <input type='date' id='check-out' name='check-out' required><br />
+
+                    <label for='adults' class="row">Number of adults:</label><br />
+                    <input type='number' id='adults' name='adults' min=1 required><br />
+
+                    <label for='children' class="row">Children:</label><br />
+                    <input type='number' id='children' name='children' min=0><br />
+
+                    <button class="bookNow" type="button" onclick="showPage(2)">
+                        Next
+                    </button>
+                </div>
+            </div>
+            
+            <div id="form-page2" class="form-page" style="display: none">
+                <progress value="10" max="100"></progress>
+                <div><!--page title-->
+                    <h3> Room Details</h3>
+                </div>
+                <div><!--page input fields-->
+                    <div class="room">
+                        <div class="room-details">
+                            <h3>Single Room</h2>
+                            <p>1 Bed<br>
+                        
+                             1 Toilet/Bathroom
+                            </p>
+                            <p>Per Night Stay $100 NZD</p>
+
+                            <select class="room-count" data-price="100">
+                                <option value="0">0 </option>
+                                <option value="1">1 </option>
+                                <option value="2">2 </option>
+                                <option value="3">3 </option>
+
+                            </select>
+                        </div>
+                        <div class="room-image">
+                            <img src="./assets/singleroom.jpg" alt="Single Room">
+                        </div>
+                    </div>
+
+                    <div class="room">
+                        <div class="room-details">
+                            <h2>Two Bedroom</h2>
+                                <p>2 Beds <br>
+                                1 Toilet/Washroom </p>
+                                <p>Per Night stay: $150 NZD</p>
+                                            
+                                <select class="room-count" data-price="150">
+                                    <option value="0">0 </option>
+                                    <option value="1">1 </option>
+                                    <option value="2">2 </option>
+                                    <option value="3">3 </option>
+                                              
+                                </select>
+                        </div>
+                        <div class="room-image">
+                            <img src="./assets/doubleroom.jpg" alt="Double Room">
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="section">
+                        <p>Extra</p>
+                        <div>
+                            <input type="checkbox" id="Parking" name="needs" value="Parking">
+                            <label for="cooking">Parking</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Gym" name="needs" value="Gym">
+                            <label for="car-park">Gym</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Pet-House" name="needs" value="Pet-House">
+                            <label for="Pet-House">Spa</label>
+                        </div>
+                    </div>
+                </div>
+                <div><!--page nav buttons-->
+                    <button class="previous" type="button" onclick="showPage(1)">
+                        Previous Page
+                    </button>
+                    <button class="next" type="button" onclick="showPage(3)">
+                        NextPage
+                    </button>
+                </div>
+            </div>
+
+
+        <div id="form-page3" class="form-page" style="display: none">
+            <progress value="50" max="100"></progress>
+            <div><!--page title-->
+                <h3>Your Details</h3>
+            </div>
+            <div>
+                <!--page input fields-->
+                <label for="firstName" class="row">
+                    First Name:
+                    <input type="text" id="name-first" />
+                </label>
+                <label for="lastName" class="row">
+                    Last Name:
+                    <input type="text" id="name-last" />
+                </label>
+                <label for="emailAddress" class="row">
+                    Email Address:
+                    <input type="text" id="email" />
+                </label>
+                <label for="retypeEmail" class="row">
+                    Confirm Email Address:
+                    <input type="text" id="retypeEmail" />
+                </label>
+                <label for="phone" class="row">
+                    Phone Number:
+                    <input type="text" id="name-last" />
+                </label>
+            </div>
+            <div><!--page nav buttons-->
+                <button class="previous" type="button" onclick="showPage(2)">
+                    Previous Page
+                </button>
+                <button class="next" type="button" onclick="showPage(4)">
+                    NextPage
+                </button>
+            </div>
+        </div>
+        <div id="form-page4" class="form-page" style="display: none">
+            <progress value="100" max="100"></progress>
+            <div><!--page title-->
+                <h3>Card Details</h3>
+            </div>
+            <div><!--page data fields-->
+                <label for="cardholderName" class="row">
+                    Card Holder's Name:
+                    <input type="text" id="name-card" />
+                </label>
+                <label for="cardNo" class="row">
+                    Card Number:
+                    <input type="number" id="no-card" />
+                </label>
+                <label for="expDate" class="row">
+                    Expiry Date:
+                    <input type="text" id="exp-date" name="exp-date" pattern="[0-1][0-9]/[0-9]{2}" title="Enter a date in MM/YY format" placeholder="MM/YY" required>
+
+                </label>
+                <label for="cvc" class="row">
+                    CVC:
+                    <input type="number" id="cvc-card" />
+                </label>
+                <div class="form-group">
+                    <input type="radio" id="accept" name="agreement" value="accepted" required>
+                    <label for="accept">I accept to share my card details to make this</label>
+                  </div>
+                
+            </div>
+            <div><!--page nav buttons-->
+                <button class="previous" type="button" onclick="showPage(3)">
+                    Previous Page
+                </button>
+                <button class="next" type="button" onclick="showPage(5)">
+                    NextPage
+                </button>
+            </div>
+        </div>
+
+        <div id="form-page5" class="form-page" style="display: none;">
+            <div><!--page title-->
+                <h3>Confirmation</h3>
+            </div>
+            <div><!--confirmation message-->
+                <p>Your reservation has been confirmed!</p>
+            </div>
+            
+            <div><!--page nav buttons-->
+                <button class="previous" type="button" onclick="showPage(4)">
+                    Back
+                </button>
+            </div>
+        </div>
+        
+    
+        <script src="script.js"></script>
+        <script src="slider.js"></script>
+
+        
+
+
+</body>
+
+</html>
